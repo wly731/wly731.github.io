@@ -6,7 +6,6 @@
 }
 
 .footer{
-  position:absolute;
   bottom:0;
   left:0;
   border-top: solid grey;
@@ -16,7 +15,6 @@
   padding-bottom:5px;
   padding-right:100px;
   text-align: right;
-
 
 }
 
