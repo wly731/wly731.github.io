@@ -1,0 +1,46 @@
+.navigation{
+  padding-top: 5px;
+  width:100%;
+  text-align: center;
+
+}
+
+.footer{
+  position:absolute;
+  bottom:0;
+  left:0;
+  border-top: solid grey;
+  border-top-width: 1px;
+  width:100%;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-right:100px;
+  text-align: right;
+
+
+}
+
+.header-quote{
+  font-family: Garamond;
+  border-bottom:solid grey;
+  border-bottom-width: 1px;
+  padding-bottom: 5px;
+}
+
+.logo{
+  width:30px;
+  height:30px;
+
+}
+
+.content{
+  vertical-align: top;
+
+}
+
+.description{
+  font-size:0.5em;
+  color: blue;
+
+
+}
