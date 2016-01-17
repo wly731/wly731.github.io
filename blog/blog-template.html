@@ -2,24 +2,61 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
   <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
-   <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
-  <title>My blog</title>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+  <title>Blog post title</title>
 </head>
 
-<body>
-<div style="background-color: red">
-  This is the navigation side
-</div>
-<hr>
-<div>
-<a href="#">Blog Post</a> > <a href="#">Week 2</a> > Blog Title
-</div>
-<h1>Blog Title</h1>
-Date & Time
-<p>text goes here</p>
+<main>
+  <div class="header-quote">
+  "Good, better, best. Never let it rest. Until your good is better and your better is best." - Tim Duncan
+  </div>
 
-</body>
+  <table class="navigation">
+    <tr>
+      <td><a href = "../index.html">Home</td>
+      <td><a href = "">About me</a></td>
+      <td><a href = "./index.html">Blog posts</a></td>
+      <td><a href = "#">Projects</a></td>
+      <td><a href = "#">Resume</a></td>
+      <td><a href = "#">Contact me</a><td>
+    </tr>
+  </table>
+
+  <h1>Blog headline</h1>
+  <h2>caption</h2>
+  <h4>Date</h4>
+
+  <section>
+    <p>
+      Version Control System, aka VCS, is a word that you should know as a beginner in this field. Actually this is no new thing, as most of you may probably have used Google Doc before, in which different people can work on the same document remotely and simultaneously, and the changes are tracked accordingly. Well that is basically what a VCS is about: it allows people to collaborate, track changes along with who made the change and why they made it, and also shift between different versions of work. The benefit of VCS includes increasing working efficiency, code due diligence, working clairity, improving division of labor, etc. Especially in an environment where team collabartion is of utmost importance.
+    </p>
+    <p>
+        Here I am going to introduce a very nice and easy to use VCS, which is called Git. You can easily install it by following the instruction here: https://confluence.atlassian.com/bitbucket/set-up-git-744723531.html
+        So how does git actually help you track changes? Before I walk into that I would like to introduce some common terminology in git. Firstly, "git add" means adding a file to be tracked. Secondly, branch means version of work, you can create multiple branches and work on them. Thirdly, commit means save. Every time you push the changes to the master code, you have to first commit (save) and then push.
+        Git helps you keep track of changes by allowing you to create multiple branches and add different files to be tracked. After each change you commit and leave a commit message. User can then check the changes history by typing "git log"
+    </p>
+    <p>
+        You may have also heard of GitHub and wondered is it the same is Git. Well actually they are not the same. Git is installed and used locally in your computer, while GitHub is a cloud platform that allows different users to upload and merge their work remotely. You can think of GitHub as the Google Drive/Dropbox of sharing the your local git. Why use GitHub to store your code? The answer is simple and similar to why you use Dropbox to store your work -  you can easily access your work anywhere and share your work to anybody, with the help of network!
+    </p>
+
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+
+<br>
+
+<div class="footer">
+  <a href="https://www.facebook.com/bwonglongyin"><img class="logo" src="../imgs/fb-art.jpg" /></a>
+  <a href="https://www.linkedin.com/in/victor-wong-7bba3258?trk=hp-identity-name"><img class="logo" src="../imgs/LinkedIn_logo_initials.png" /></a>
+  <a href="https://github.com/wly731"><img class="logo" src="../imgs/mark-github-128.png" /></a>
+  <a href="mailto:wly731@gmail.com"><img class="logo" src="../imgs/Gmail-Logo.png" /></a>
+</div>
+
+</main>
+
+
 
 </html>
 
