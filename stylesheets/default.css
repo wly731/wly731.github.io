@@ -1,3 +1,18 @@
+body{
+
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 10px 10px;
+  min-height: 100%;
+
+}
+
+html {
+  height: 90%;
+}
+
+
+
 .navigation{
   padding-top: 5px;
   width:100%;
@@ -15,6 +30,7 @@
   padding-bottom:5px;
   padding-right:100px;
   text-align: right;
+  position: absolute;
 
 }
 
@@ -42,3 +58,4 @@
 
 
 }
+
