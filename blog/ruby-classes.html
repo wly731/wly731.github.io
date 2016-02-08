@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+  <title>Blog post title</title>
+</head>
+
+<main>
+  <div class="header-quote">
+  "Good, better, best. Never let it rest. Until your good is better and your better is best." - Tim Duncan
+  </div>
+
+  <table class="navigation">
+    <tr>
+      <td><a href = "../index.html">Home</td>
+      <td><a href = "">About me</a></td>
+      <td><a href = "./index.html">Blog posts</a></td>
+      <td><a href = "#">Projects</a></td>
+      <td><a href = "#">Resume</a></td>
+    </tr>
+  </table>
+
+  <h1>Ruby Classes</h1>
+  <h2>Class methods/variables vs. Instance methods/variables</h2>
+  <h4>7th February 2016</h4>
+
+  <section>
+    <p>
+      As we are getting more and more familiar with Ruby, another important concept that all newb Rubyists must understand is Ruby classes. A class is a blueprint that provides the behaviors (methods) to its objects. In other words, an object is an instance of a class. For example, "Ruby" is an object/instance of the string class.
+    </p>
+
+    <p>
+      Let's define a class and use it as an example to explore about different concepts of a Ruby class.
+    </p>
+
+    <p><pre><code>
+    class Player
+      @@sports = "basketball"
+
+      def initialize(name, height, team)
+        @name = name
+        @height = height
+        @team = team
+      end
+
+      def self.sports
+        p @@sports
+      end
+
+      def profile
+        puts "Player name: #{@name}"
+        puts "Height(cm): #{@height}"
+        puts "Current team: #{@team}"
+      end
+
+    end
+    </code></pre></p>
+
+    <h4>Class variables vs. instance variables</h4>
+    <p>
+      For instance variables, the name is prefixed with an <code>@</code>. Each object has its own copy of the instance variables. While for class variables, the name is prefixed with <code>@@</code>. There should only be one copy for the same class. Using the example above, every player object created using this class has its own name, height and team. However, for all the players, the variable <code>sports</code> is the same, which is "basketball".
+    </p>
+
+    <br>
+
+    <h4>Class methods vs. instance methods</h4>
+
+    <p>
+      For instance methods, they are called on the object itself. For example, if we created a Player object called Baller_A and we call the instance method <code>profile</code> on it:
+
+      <pre><code>Baller_A = Player.new("Stephen Curry",191,"GSW")
+
+Baller_A.profile #=>
+
+Player name: Stephen Curry
+Height(cm): 191
+Current team: GSW</code></pre>
+
+    <br>
+
+      For class methods, they are called on the class itself. To define a class methods we should follow this format: <pre><code>def self.method-name
+
+  method content
+
+end</code></pre>
+
+    <br>
+
+      For example, if we call the class method - sports on the Player class:
+
+      <pre><code>Player.sports #=> "basketball"</code></pre>
+
+    </p>
+
+  </section>
+
+ <!-- copy and paste as many sections as you want to add paragraphs -->
+
+<br>
+
+<div class="footer">
+  <a href="https://www.facebook.com/bwonglongyin"><img class="logo" src="../imgs/fb-art.jpg" /></a>
+  <a href="https://www.linkedin.com/in/victor-wong-7bba3258?trk=hp-identity-name"><img class="logo" src="../imgs/LinkedIn_logo_initials.png" /></a>
+  <a href="https://github.com/wly731"><img class="logo" src="../imgs/mark-github-128.png" /></a>
+  <a href="mailto:wly731@gmail.com"><img class="logo" src="../imgs/Gmail-Logo.png" /></a>
+</div>
+
+</main>
+
+
+
+</html>
