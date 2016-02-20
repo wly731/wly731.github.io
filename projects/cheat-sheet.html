@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+  <link type="text/css" rel="stylesheet" href="./cheat-sheet.css">
+
+  <title>SQL cheat sheet</title>
+</head>
+
+<body>
+<div class="header-quote">
+  "Good, better, best. Never let it rest. Until your good is better and your better is best." - Tim Duncan
+</div>
+
+<table class="navigation">
+  <tr>
+    <td><a href = "../index.html">Home</a></td>
+    <td><a href = "../about.html">About me</a></td>
+    <td><a href = "../blog/index.html">Blog posts</a></td>
+    <td><a href = "./index.html">Projects</a></td>
+    <td><a href = "#">Resume</a></td>
+  </tr>
+</table>
+
+<br>
+
+<section>
+<a href="../index.html">Home</a> > <a href="./index.html">Project</a> > <b>SQL cheat sheet</b>
+</section>
+
+<div>
+<table id="sample-table-1">
+  <caption><b>Table 1 - Orders</b></caption>
+  <tr>
+    <th>OrderID</th>
+    <th>CustomerID</th>
+    <th>OrderDate</th>
+  </tr>
+  <tr>
+    <td>10308</td>
+    <td>2</td>
+    <td>1996-09-18</td>
+  </tr>
+  <tr>
+    <td>10309</td>
+    <td>37</td>
+    <td>1996-09-19</td>
+  </tr>
+  <tr>
+    <td>10310</td>
+    <td>77</td>
+    <td>1996-09-20</td>
+  </tr>
+
+</table>
+
+<table id="sample-table-2">
+ <caption><b>Table 2 -Customers</b></caption>
+ <tr>
+    <th>CustomerID</th>
+    <th>CustomerName</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Alex</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Kelvin</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Victor</td>
+    <td>US</td>
+  </tr>
+</table>
+
+
+</div>
+
+<div id="main-wrap">
+
+  <div id="left-content">
+    <section>
+      <h4>SQL SELECT Syntax</h4>
+      <p><code>SELECT CustomerID, CustomerName FROM Customers;</code></p>
+
+      <h4>Result</h4>
+
+      <table>
+        <tr>
+          <td><code>CustomerID</code></td>
+          <td><code>CustomerName</code></td>
+        </tr>
+
+        <tr>
+          <td><code>----------</code></td>
+          <td><code>----------</code></td>
+        </tr>
+
+        <tr>
+          <td><code>1</code></td>
+          <td><code>Alex</code></td>
+        </tr>
+
+        <tr>
+          <td><code>2</code></td>
+          <td><code>Kelvin</code></td>
+        </tr>
+
+        <tr>
+          <td><code>3</code></td>
+          <td><code>Victor</code></td>
+        </tr>
+
+      </table>
+    </section>
+
+    <section>
+      <h4>SQL WHERE Syntax</h4>
+      <p><code>SELECT CustomerID, CustomerName FROM Customers WHERE CustomerID > 2;</code></p>
+
+      <h4>Result</h4>
+
+      <table>
+        <tr>
+          <td><code>CustomerID</code></td>
+          <td><code>CustomerName</code></td>
+        </tr>
+
+        <tr>
+          <td><code>----------</code></td>
+          <td><code>----------</code></td>
+        </tr>
+
+        <tr>
+          <td><code>3</code></td>
+          <td><code>Victor</code></td>
+        </tr>
+
+      </table>
+
+    </section>
+
+  </div>
+
+
+
+
+
+
+
+  <div id="right-content">
+    <section>
+      <h4>SQL ORDER BY Syntax</h4>
+      <p><code>SELECT OrderID, CustomerID FROM Orders ORDER BY CustomerID DESC;</code>(ASC if in ascending order)</p>
+
+      <h4>Result</h4>
+
+       <table>
+          <tr>
+            <td><code>OrderID</code></td>
+            <td><code>CustomerID</code></td>
+          </tr>
+
+          <tr>
+            <td><code>----------</code></td>
+            <td><code>----------</code></td>
+          </tr>
+
+          <tr>
+            <td><code>10310</code></td>
+            <td><code>77</code></td>
+          </tr>
+
+          <tr>
+            <td><code>10309</code></td>
+            <td><code>37</code></td>
+          </tr>
+
+          <tr>
+            <td><code>10308</code></td>
+            <td><code>2</code></td>
+          </tr>
+
+        </table>
+
+    </section>
+
+    <section>
+      <h4>SQL INNER JOIN Keyword</h4>
+      <p><pre><code>SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers
+ON Orders.CustomerID=Customers.CustomerID;
+</code></pre></p>
+
+      <h4>Result</h4>
+
+       <table>
+          <tr>
+            <td><code>OrderID</code></td>
+            <td><code>CustomerName</code></td>
+            <td><code>OrderDate</code></td>
+          </tr>
+
+          <tr>
+            <td><code>----------</code></td>
+            <td><code>----------</code></td>
+            <td><code>----------</code></td>
+          </tr>
+
+          <tr>
+            <td><code>10308</code></td>
+            <td><code>Kelvin</code></td>
+            <td><code>1996-09-18</code></td>
+          </tr>
+
+        </table>
+
+
+
+    </section>
+
+
+
+
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="footer">
+  <a href="https://www.facebook.com/bwonglongyin"><img class="logo" src="../imgs/fb-art.jpg" /></a>
+  <a href="https://www.linkedin.com/in/victor-wong-7bba3258?trk=hp-identity-name"><img class="logo" src="../imgs/LinkedIn_logo_initials.png" /></a>
+  <a href="https://github.com/wly731"><img class="logo" src="../imgs/mark-github-128.png" /></a>
+  <a href="mailto:wly731@gmail.com"><img class="logo" src="../imgs/Gmail-Logo.png" /></a>
+</div>
+
+
+</body>
+
+</html>

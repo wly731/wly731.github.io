@@ -1,0 +1,61 @@
+/* sizes */
+#main-wrap > div {
+
+  min-height: 450px;
+
+}
+
+
+/* layout */
+#main-wrap {
+    /* overflow to handle inner floating block */
+    overflow: hidden;
+}
+
+#left-content {
+    float: left;
+    width: 50%;
+}
+
+#right-content{
+    float: right;
+    width: 50%;
+}
+
+#sample-table-1{
+  width:100%;
+  border:1px solid #ccc;
+  margin:5px;
+  text-align:left;
+
+}
+
+#sample-table-1 tr{
+  border: 1px solid black;
+  border-collapse: collapse;
+
+}
+
+#sample-table-1 tr:nth-child(even) {
+  background-color:#eee;
+}
+
+#sample-table-1 tr:nth-child(odd) {
+  background-color:#fff;
+}
+
+#sample-table-2{
+  width:100%;
+  border:1px solid #ccc;
+  margin:5px;
+  text-align:left;
+}
+
+#sample-table-2 tr:nth-child(even) {
+  background-color:#eee;
+}
+
+#sample-table-2 tr:nth-child(odd) {
+  background-color:#fff;
+}
+
