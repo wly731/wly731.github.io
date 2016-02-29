@@ -2,35 +2,80 @@ body{
 
   position: relative;
   margin: 0;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 0px 10px 0px;
   min-height: 100%;
+  font-family: 'Merriweather', serif;
+/*  background-color: #BBD4F0;*/
 
 }
+
 
 html {
   height: 98%;
 }
 
+.banner{
 
-
-
-.navigation{
-  padding-top: 5px;
-  width:100%;
-  text-align: center;
+width:100%;
+margin: auto;
 
 }
 
+.bottom-boarder{
+
+border-bottom: solid grey;
+border-width: 1px;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+
+.navigation{
+
+  padding: 8px 8px 8px 8px;
+  width: 60%;
+/*  text-align: center;*/
+  margin: auto;
+/*  background-color:red;*/
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25em;
+  text-transform: uppercase;
+
+
+}
+
+
+div table a{
+  color:black;
+  text-decoration: none;
+}
+
+div table a:hover{
+  color:grey;
+}
+
+
+
+div a{
+  color: #444444;
+  text-decoration: none;
+}
+
+div a:hover{
+  color:black;
+}
+
 .footer{
-  bottom:0;
-  left:0;
+/*  bottom:0;
+  left:0;*/
   border-top: solid grey;
   border-top-width: 1px;
-  width:100%;
+  width:60%;
+  margin: auto;
   padding-top:5px;
   padding-bottom:5px;
   text-align: right;
-  position: absolute;
+/*  position: absolute;*/
 
 }
 
@@ -52,12 +97,28 @@ html {
   border-width: 5px;
   border-style: solid;
   border-color: transparent;
+  font-family: 'Merriweather';
 }
 
 .description{
-  font-size:0.5em;
-  color: blue;
-
+  font-size:0.75em;
+  margin:3px;
 
 }
 
+.main-body{
+
+  width:60%;
+  margin: auto;
+
+}
+
+.thin-margin{
+
+  margin: 0px;
+}
+
+.reference{
+
+  font-size:0.75em;
+}
